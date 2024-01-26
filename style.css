@@ -92,8 +92,8 @@ main{
 .Line{
     height: 95%;
     border-radius: 1rem;
-    width: 10%;
-    /* background-color: red; */
+    width: 2%;
+    background-color: red;
     background-color: #515050;
     margin:0 5.6rem;
 }
@@ -140,11 +140,6 @@ p{
 
     .btn{
         padding: .5rem;
-    }
-
-    .playgroundLayout{
-        height: 85vh;
-        width: 100vw;
     }
 
     .Line{
