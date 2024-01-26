@@ -1,0 +1,122 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100vh;
+    width: 100vw;
+    background: #515151;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+main{
+    position: relative;
+    height: 90%;
+    border-radius: 1rem;
+    width: 50%;
+    background-color: #131313;
+}
+
+.playerInfo{
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    height: 15%;
+    background: #131313;
+    border-bottom: #515151 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* .sameDiv:nth-child(){
+    background: #000;
+} */
+.sameDiv{
+    background: #515050;
+    border-radius: 1rem;
+    height: 60%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 1rem;
+    background: #e79df4;
+}
+
+.playgroundLayout{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    height: 85%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+}
+
+.vertical{
+    position: absolute;
+    pointer-events: none;
+    /* background: #c75c5c87; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    rotate: 90deg;
+    height: 100%;
+    width: 100%;
+}
+
+.horizantal{
+    position:  absolute;
+    /* background: #f27d7d9a; */
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.Line{
+    height: 95%;
+    border-radius: 1rem;
+    width: 1rem;
+    background-color: #515050;
+    margin:0 5.6rem;
+}
+
+.play{
+    display: grid;
+    grid-template-columns: 200px 150px 200px; 
+    grid-template-rows: 200px 150px 200px; 
+}
+
+p{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    font-size: 8rem;
+    color: #848181;
+    font-weight: 100;
+}
+
+.btn:hover{
+    background-color: #daafd5;
+}
+.btn:active{
+    border: 2px solid #aeaeae ;
+}
