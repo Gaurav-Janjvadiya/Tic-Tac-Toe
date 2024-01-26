@@ -131,6 +131,7 @@ p{
     }
 
     .playerInfo{
+        height: 7vh;
         padding: 0.5rem;
     }
 
@@ -144,16 +145,17 @@ p{
 
     .Line{
         height: 50%;
-        margin: 0 2.6rem;
+        margin: 0 3.5rem;
         width: 2%;
     }
 
     .play{
-        grid-template-columns: 100px 75px 100px; 
-        grid-template-rows: 100px 75px 100px; 
+        grid-template-columns: 130px 95px 130px; 
+        grid-template-rows: 130px 95px 130px; 
     }
 
     p{
-        font-size: 5rem;
+        font-weight: 600;
+        font-size: 6rem;
     }
 }
