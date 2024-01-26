@@ -1,5 +1,4 @@
 *{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,6 +7,7 @@
 body,html{
     height: 100vh;
     width: 100vw;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: #515151;
     display: flex;
     justify-content: center;
@@ -26,7 +26,7 @@ main{
 .playerInfo{
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
-    height: 15%;
+    height: 15vh;
     background: #131313;
     border-bottom: #515151 2px solid;
     display: flex;
@@ -39,8 +39,7 @@ main{
 .sameDiv{
     background: #515050;
     border-radius: 1rem;
-    height: 60%;
-    width: 40%;
+    padding: 1rem 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,13 +47,14 @@ main{
 
 .btn{
     cursor: pointer;
-    padding: 10px;
+    padding: .7rem;
     border: none;
     border-radius: 1rem;
     background: #e79df4;
 }
 
 .playgroundLayout{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;    
@@ -62,7 +62,7 @@ main{
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     width: 100%;
-    position: relative;
+    /* background: rgba(255, 0, 0, 0.574); */
     padding: 1rem;
 }
 
@@ -92,13 +92,15 @@ main{
 .Line{
     height: 95%;
     border-radius: 1rem;
-    width: 1rem;
+    width: 10%;
+    /* background-color: red; */
     background-color: #515050;
     margin:0 5.6rem;
 }
 
 .play{
     display: grid;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     grid-template-columns: 200px 150px 200px; 
     grid-template-rows: 200px 150px 200px; 
 }
@@ -119,4 +121,44 @@ p{
 }
 .btn:active{
     border: 2px solid #aeaeae ;
+}
+
+@media screen and (max-width:600px) {
+    main{
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    .playerInfo{
+        padding: 0.5rem;
+    }
+
+    .sameDiv{
+        padding: .5rem 1.5rem;
+    }
+
+    .btn{
+        padding: .5rem;
+    }
+
+    .playgroundLayout{
+        height: 85vh;
+        width: 100vw;
+    }
+
+    .Line{
+        height: 50%;
+        margin: 0 2.6rem;
+        width: 2%;
+    }
+
+    .play{
+        grid-template-columns: 100px 75px 100px; 
+        grid-template-rows: 100px 75px 100px; 
+    }
+
+    p{
+        font-size: 5rem;
+    }
 }
