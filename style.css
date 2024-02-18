@@ -4,6 +4,7 @@
     --playerInfo-bg: #131313;
     --btn-bg:#e79df4;
     --p-color:#848181;
+    --btn-hover:#daafd5;
 }
 
 * {
@@ -129,7 +130,7 @@ p {
     flex-direction: column;
     color: var(--btn-bg);
     border-radius: 2rem;
-    border: 2px solid #daafd5 ;
+    border: 2px solid var(--btn-hover) ;
     height: 30vh;
     width: 30vw;
     backdrop-filter: blur(5px);
@@ -141,11 +142,11 @@ p {
 }
 
 .btn:hover {
-    background-color: #daafd5;
+    background-color: var(--btn-hover);
 }
 
 .btn:active {
-    border: 2px solid #aeaeae;
+    border: 2px solid var(--btn-hover);
 }
 
 @media screen and (max-width:600px) {
@@ -195,15 +196,28 @@ p {
     }
 }
 
-/* For light mode
+/* For light mode */
 @media (prefers-color-scheme: light) {
+    :root{
+        --body-bg:#8CB9BD;
+        --main-bg:#C6DCBA;
+        --playerInfo-bg: #BBC3A4;
+        --btn-bg:#aaaaaa;
+        --btn-hover:#acd2fd;
+        --p-color: #40A2E3;
+        /* --p-color: #474F7A; */ 
+  }
+}
+
+  /* For dark mode */
+  @media (prefers-color-scheme: dark) {
     :root{
         --body-bg:#515151;
         --main-bg:#131313;
+        --playerInfo-bg: #131313;
+        --btn-bg:#e79df4;
+        --p-color:#848181;
+        --btn-hover:#daafd5;
     }
   }
-
-  For dark mode
-  @media (prefers-color-scheme: dark) {
-  }
-   */
+   

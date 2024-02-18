@@ -7,11 +7,18 @@ const h1 = document.querySelector("h1");
 const unique = [1,2,3,4,5,6,7,8,9];
 
 const restart = () => {
+    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const prefersLightMode = window.matchMedia('(prefers-color-scheme: light)').matches;
     for(let i=0;i<9;i++)
     {
         Ps[i].innerHTML = unique[i];
         Ps[i].style.opacity = '0';
-        Ps[i].style.color = '#848181';
+        if(prefersDarkMode){
+            Ps[i].style.color = '#40A2E3';
+        }
+        if(prefersLightMode){
+            Ps[i].style.color = '#848181';
+        }
     }
 }
 
