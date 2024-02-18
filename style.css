@@ -36,9 +36,6 @@ main {
     justify-content: space-around;
 }
 
-/* .sameDiv:nth-child(){
-    background: #000;
-} */
 .sameDiv {
     background: #515050;
     border-radius: 1rem;
@@ -109,6 +106,7 @@ main {
 }
 
 p {
+    opacity: 0;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -121,9 +119,21 @@ p {
 
 .massage{
     position: absolute;
-    z-index: 999;
-    padding: 4rem;
-    background: #000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(163, 161, 161);
+    border-radius: 2rem;
+    border: 1px solid #daafd5 ;
+    height: 30vh;
+    width: 30vw;
+    backdrop-filter: blur(5px);
+}
+
+.ok{
+    margin-top: 1.5rem;
+    padding: 0.5rem 2rem;
 }
 
 .btn:hover {
