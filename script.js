@@ -11,6 +11,7 @@ const restart = () => {
     {
         Ps[i].innerHTML = unique[i];
         Ps[i].style.opacity = '0';
+        Ps[i].style.color = '#848181';
     }
 }
 
@@ -41,18 +42,17 @@ play.addEventListener("click",(e) => {
     forPopup(3,4,5);
     forPopup(6,7,8);
     forPopup(0,3,6);
-    forPopup(1,4,5);
+    forPopup(1,4,7);
     forPopup(2,5,8);
     forPopup(2,4,6);
     forPopup(0,4,8);
-
 })
 
 const forPopup = (one,two,three) => {
     if(Ps[one].innerHTML === Ps[two].innerHTML && Ps[two].innerHTML === Ps[three].innerHTML){
-        Ps[one].style.color = '#848181'
-        Ps[two].style.color = '#848181'
-        Ps[three].style.color = '#848181'
+        Ps[one].style.color = '#e79df4'
+        Ps[two].style.color = '#e79df4'
+        Ps[three].style.color = '#e79df4'
         popUp.style.display = 'flex';
         if(TF == 1){
             h1.innerHTML = 'Player 1 is winner'
