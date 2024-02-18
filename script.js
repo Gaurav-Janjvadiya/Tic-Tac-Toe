@@ -14,7 +14,6 @@ const restart = () => {
         Ps[i].innerHTML = unique[i];
         Ps[i].style.opacity = '0';
         if(prefersDarkMode){
-            // Ps[i].style.color = '#40A2E3';
             Ps[i].style.color = '#848181';
         }
         if(prefersLightMode){
