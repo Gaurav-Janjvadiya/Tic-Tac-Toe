@@ -119,6 +119,13 @@ p {
     font-weight: 100;
 }
 
+.massage{
+    position: absolute;
+    z-index: 999;
+    padding: 4rem;
+    background: #000;
+}
+
 .btn:hover {
     background-color: #daafd5;
 }
