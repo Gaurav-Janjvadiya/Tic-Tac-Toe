@@ -1,3 +1,11 @@
+:root{
+    --body-bg:#515151;
+    --main-bg:#131313;
+    --playerInfo-bg: #131313;
+    --btn-bg:#e79df4;
+    --p-color:#848181;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -10,7 +18,7 @@ html {
     height: 100vh;
     width: 100vw;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: #515151;
+    background: var(--body-bg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,22 +30,22 @@ main {
     height: 90%;
     border-radius: 1rem;
     width: 50%;
-    background-color: #131313;
+    background-color: var(--main-bg);
 }
 
 .playerInfo {
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
     height: 15vh;
-    background: #131313;
-    border-bottom: #515151 2px solid;
+    background: var(--playerInfo-bg);
+    border-bottom: 2px solid var(--body-bg);
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 .sameDiv {
-    background: #515050;
+    background:var(--body-bg);
     border-radius: 1rem;
     padding: 1rem 4rem;
     display: flex;
@@ -50,7 +58,7 @@ main {
     padding: .7rem;
     border: none;
     border-radius: 1rem;
-    background: #e79df4;
+    background: var(--btn-bg) ;
 }
 
 .playgroundLayout {
@@ -62,14 +70,12 @@ main {
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     width: 100%;
-    /* background: rgba(255, 0, 0, 0.574); */
     padding: 1rem;
 }
 
 .vertical {
     position: absolute;
     pointer-events: none;
-    /* background: #c75c5c87; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,7 +86,6 @@ main {
 
 .horizantal {
     position: absolute;
-    /* background: #f27d7d9a; */
     pointer-events: none;
     height: 100%;
     width: 100%;
@@ -93,8 +98,7 @@ main {
     height: 95%;
     border-radius: 1rem;
     width: 2%;
-    background-color: red;
-    background-color: #515050;
+    background-color: var(--body-bg);
     margin: 0 5.6rem;
 }
 
@@ -113,7 +117,7 @@ p {
     justify-content: center;
     border-radius: 2rem;
     font-size: 8rem;
-    color: #848181;
+    color: var(--p-color);
     font-weight: 100;
 }
 
@@ -123,9 +127,9 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: rgb(163, 161, 161);
+    color: var(--btn-bg);
     border-radius: 2rem;
-    border: 1px solid #daafd5 ;
+    border: 2px solid #daafd5 ;
     height: 30vh;
     width: 30vw;
     backdrop-filter: blur(5px);
@@ -190,3 +194,16 @@ p {
         padding: 0.5rem 2rem;
     }
 }
+
+/* For light mode
+@media (prefers-color-scheme: light) {
+    :root{
+        --body-bg:#515151;
+        --main-bg:#131313;
+    }
+  }
+
+  For dark mode
+  @media (prefers-color-scheme: dark) {
+  }
+   */
