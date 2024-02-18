@@ -55,10 +55,10 @@ const forPopup = (one,two,three) => {
         Ps[three].style.color = '#848181'
         popUp.style.display = 'flex';
         if(TF == 1){
-            h1.innerHTML = 'Player 1 in winner'
+            h1.innerHTML = 'Player 1 is winner'
         }
         else{
-            h1.innerHTML = 'Player 2 in winner' 
+            h1.innerHTML = 'Player 2 is winner' 
         }
     }
 }

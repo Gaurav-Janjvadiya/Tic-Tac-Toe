@@ -179,4 +179,14 @@ p {
         font-weight: 600;
         font-size: 6rem;
     }
+
+    .massage{
+        width: 80vw;
+        height: 20vh;
+    }
+
+    .ok{
+        margin-top: 1.5rem;
+        padding: 0.5rem 2rem;
+    }
 }
