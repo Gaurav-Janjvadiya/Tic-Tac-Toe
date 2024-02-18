@@ -15,7 +15,7 @@ play.addEventListener("click",(e) => {
         TF = 1;
         sameDivs[1].style.border = "2px solid white";
         sameDivs[0].style.border = "none";
-
+        
             e.target.innerHTML = "X";
 
     }else{
